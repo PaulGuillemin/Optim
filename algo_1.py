@@ -4,8 +4,6 @@ nbMachines = 4
 nbServices = 79
 machineneutre = 0
 
-
-
 def testRessources(p, m):
     for i in range(nbRessources):
         if machines[m][i] > processus[p][i+1]:
@@ -21,7 +19,7 @@ def testAll(p):
     for m in range(nbMachines):
         service = processus[p][0]
         if useMach[m][service] == False:
-            if testRessources(p,m)== True:
+            if testRessources(p,m) == True:
                 return m
     return machineneutre
 
