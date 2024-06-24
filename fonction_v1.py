@@ -19,14 +19,26 @@ def testAll(p):
     for m in range(nbMachines):
         service = processus[p][0]
         if useMach[m][service] == False:
+<<<<<<< HEAD:algo_1.py
             if testRessources(p,m) == True:
+=======
+            if testRessources(p,m)== True:
+                useMach[m][service] = True 
+>>>>>>> 592e84a37059078f3dd53627e44ee4717ababc81:fonction_v1.py
                 return m
     return machineneutre
 
 def testNewLoc(p):
+    useLoc = [[False for i in range(nbServices)] for j in range(nbMachines)]
     service = processus[p][0]
     for m in range(nbMachines):
-        
+        loc = machines[m]
+        if not useLoc[loc][service]:
+            if testRessources(p, m):
+                useLoc[loc][service] = True
+                return m
+    return machineneutre
+
 
 
 
