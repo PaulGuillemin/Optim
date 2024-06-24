@@ -1,9 +1,13 @@
+from data1 import * 
+nbRessources = 2
 
-testRessources(processus p, machine m)
-pour chaque ressource r
-si capa_res[m][r] < r(p,r)
-return false
-fin si
-fin pour
-return true
+
+def testRessources(p, m):
+    for i in range(nbRessources):
+        if machines[m][i] > processus[p][i+1]:
+            return False
+    return True
+
+
+
     
