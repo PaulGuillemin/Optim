@@ -27,3 +27,15 @@ processus = np.array([
     [71, 18, 18], [72, 414, 243], [73, 1, 1], [6, 7, 12], [74, 507, 335], [75, 217, 186], [76, 334, 426], 
     [2, 157, 100], [7, 447, 524], [77, 399, 799], [78, 123, 186], [1, 26, 14], [5, 10, 7], [4, 25, 18]
 ])
+
+services_ = np.copy(services)
+
+nb_loc = np.array(np.zeros(len(services)))
+
+for s in range(len(services)):
+    nb_loc[s] = 0
+
+for p in range(len(processus)):
+    services_[p] 
+
+print()
