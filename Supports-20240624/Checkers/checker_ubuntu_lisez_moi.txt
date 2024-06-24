@@ -1,0 +1,2 @@
+après téléchargement rendre le fichier exécutable :
+chmod u+x checker_ubuntu
